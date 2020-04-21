@@ -108,8 +108,11 @@ int main(void)
 
   /* USER CODE BEGIN 3 */
 
+
+	 HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,1);
 	 HAL_Delay(100);
-	 HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+	 HAL_GPIO_WritePin(LED_GPIO_Port,LED_Pin,0);
+	 HAL_Delay(100);
 
   }
   /* USER CODE END 3 */
